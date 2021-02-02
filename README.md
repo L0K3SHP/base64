@@ -4,14 +4,20 @@
 ### Looking for Contributer for making code more efficeient 
 
 ### Base64 Char Chart
-<table>
-    <th>Index</th>
-    <th>Char</th>
-    <td>
-        <tr>0</tr><tr>A</tr>
-    </td>
-</table>
-
+| Index | Character |
+|:-----:|:---------:|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
 Prerequisite:
 <ol>
 <li>Python 3.x (x: Version)</li>
