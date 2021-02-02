@@ -1,7 +1,12 @@
 # Base64
-## Base 64 Ecoding/Decoding Program using ***Python***
+## Base 64 Encoding/Decoding Program using ***Python***
 
-### Decoding Program is still in development phase
+### Looking for Contributer for making code more efficeient 
+
+###Base64 Char Chart
+<table>
+    <th>Index</th>
+</table>
 
 Prerequisite:
 <ol>
