@@ -6,7 +6,10 @@
 ### Base64 Char Chart
 <table>
     <th>Index</th>
-    <th>Index</th>
+    <th>Char</th>
+    <td>
+        <tr>0</tr><tr>A</tr>
+    </td>
 </table>
 
 Prerequisite:
