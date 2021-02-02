@@ -3,8 +3,9 @@
 
 ### Looking for Contributer for making code more efficeient 
 
-###Base64 Char Chart
+### Base64 Char Chart
 <table>
+    <th>Index</th>
     <th>Index</th>
 </table>
 
