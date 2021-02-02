@@ -11,7 +11,7 @@ def base64_encrypt(text):
         con =  con + '0' + binary                               # Concatenate all
     n = 6
     chunks = [con[i:i+n] for i in range(0, len(con), n)]        # Grourping into 6 Char
-    for i in chunks:                                            # If any grp has less thn 6 char add additional required 00
+    for i in chunks:                                            # If any grp has less thn 6 char add additional required "0" zeros
         if len(i) != 6:                             
             pz = 6 - len(i) 
             loc = chunks.index(i) 
@@ -24,8 +24,8 @@ def base64_encrypt(text):
             pass
     encypt = ''
     for i in chunks:                                            
-        i = '00' + i                                            # Convert six-bit bytes into eight-bit bytes, by prepend the prefix “00”
-        i = int(i,2)                                            # Decimal COnversion
+        i = '00' + i                                            # Convert six-bit bytes into eight-bit bytes, by prepend the prefix “00” zeros
+        i = int(i,2)                                            # Decimal Conversion
         i = code[i]                                             # Base64 Chart Char COnversion
         encypt += str(i)
     #encypt += '=='
@@ -38,11 +38,11 @@ def base64_decrypt(text1):
     #text1 = text1[:-2]
     dbinary = []
     for i in text1:
-        index = code.index(i)
-        binary = bin(index)
+        index = code.index(i)                                   # Base64 Chart Index Conversion
+        binary = bin(index)                                     # Binary Conversion
         binary = binary[2:]
         dbinary.append(binary)
-    for i in dbinary:
+    for i in dbinary:                                           # If any grp has less thn 6 char add additional required "0" zeros
         if len(i) != 6:
             pz = 6 - len(i)
             loc = dbinary.index(i)
@@ -55,15 +55,15 @@ def base64_decrypt(text1):
     for i in dbinary:      
         con = con + i  
     n = 8
-    chunks = [con[i:i+n] for i in range(0, len(con), n)]  
+    chunks = [con[i:i+n] for i in range(0, len(con), n)]        # Grourping into 8 Char
     decrypt = '' 
-    for i in chunks:
-        if len(i) != 8:
+    for i in chunks:                                            
+        if len(i) != 8:                                         # If any grp has less thn 8 char pop it out
             loc = chunks.index(i)
             chunks.pop(loc)    
         else:
-            i = int(i,2)
-            i = chr(i)
+            i = int(i,2)                                        # Decimal Conversion
+            i = chr(i)                                          # Char Conversion
             decrypt += str(i)
     print(decrypt)
     
