@@ -1,7 +1,7 @@
 # Base64
 ## Base 64 Encoding/Decoding Program using ***Python***
 
-### Looking for Contributer for making code more efficeient 
+### Looking for Contributer to make code more efficeient 
 
 Prerequisite:
 <ol>
